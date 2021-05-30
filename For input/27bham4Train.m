@@ -1,0 +1,223 @@
+function [bham] = bham4Train(rw,cl)
+%GET ALPHABETS
+%==============
+ 
+bham1 =imread('27bham (1).bmp');
+bham2 =imread('27bham (2)).bmp');
+bham3 =imread('27bham (3).bmp');
+bham4 =imread('27bham (4).bmp');
+bham5 =imread('27bham (5).bmp');
+bham6 =imread('27bham (6).bmp');
+bham7 =imread('27bham (7).bmp');
+bham8 =imread('27bham (8).bmp');
+bham9 =imread('27bham (9).bmp');
+bham10 =imread('27bham (10).bmp');
+bham11 =imread('27bham (11).bmp');
+bham12 =imread('27bham (12).bmp');
+bham13 =imread('27bham (13).bmp');
+bham14 =imread('27bham (14).bmp');
+bham15 =imread('27bham (15).bmp');
+bham16 =imread('27bham (16).bmp');
+bham17 =imread('27bham (17).bmp');
+bham18 =imread('27bham (18).bmp');
+bham19 =imread('27bham (19).bmp');
+bham20 =imread('27bham (20).bmp');
+bham21 =imread('27bham (21).bmp');
+bham22 =imread('27bham (22).bmp');
+bham23 =imread('27bham (23).bmp');
+bham24 =imread('27bham (24).bmp');
+bham25 =imread('27bham (25).bmp');
+bham26 =imread('27bham (26).bmp');
+bham27 =imread('27bham (27).bmp');
+bham28 =imread('27bham (28).bmp');
+bham29 =imread('27bham (29).bmp');
+bham30 =imread('27bham (30).bmp');
+bham31 =imread('27bham (31).bmp');
+bham32 =imread('27bham (32).bmp');
+bham33 =imread('27bham (33).bmp');
+bham34 =imread('27bham (34).bmp');
+bham35 =imread('27bham (35).bmp');
+bham36 =imread('27bham (36).bmp');
+bham37 =imread('27bham (37).bmp');
+bham38 =imread('27bham (38).bmp');
+bham39 =imread('27bham (39).bmp');
+bham40 =imread('27bham (40).bmp');
+bham41 =imread('27bham (41).bmp');
+bham42 =imread('27bham (42).bmp');
+bham43 =imread('27bham (43).bmp');
+bham44 =imread('27bham (44).bmp');
+bham45 =imread('27bham (45).bmp');
+bham46 =imread('27bham (46).bmp');
+bham47 =imread('27bham (47).bmp');
+bham48 =imread('27bham (48).bmp');
+bham49 =imread('27bham (49).bmp');
+bham50 =imread('27bham (50).bmp');
+bham51 =imread('27bham (51).bmp');
+bham52 =imread('27bham (52).bmp');
+bham53 =imread('27bham (53).bmp');
+bham54 =imread('27bham (54).bmp');
+bham55 =imread('27bham (55).bmp');
+bham56 =imread('27bham (56).bmp');
+bham57 =imread('27bham (57).bmp');
+bham58 =imread('27bham (58).bmp');
+bham59 =imread('27bham (59).bmp');
+bham60 =imread('27bham (60).bmp');
+bham61 =imread('27bham (61).bmp');
+bham62 =imread('27bham (62).bmp');
+bham63 =imread('27bham (63).bmp');
+bham64 =imread('27bham (64).bmp');
+bham65 =imread('27bham (65).bmp');
+bham66 =imread('27bham (66).bmp');
+bham67 =imread('27bham (67).bmp');
+bham68 =imread('27bham (68).bmp');
+bham69 =imread('27bham (69).bmp');
+bham70 =imread('27bham (70).bmp');
+bham71 =imread('27bham (71).bmp');
+bham72 =imread('27bham (72).bmp');
+bham73 =imread('27bham (73).bmp');
+bham74 =imread('27bham (74).bmp');
+bham75 =imread('27bham (75).bmp');
+bham76 =imread('27bham (76).bmp');
+bham77 =imread('27bham (77).bmp');
+bham78 =imread('27bham (78).bmp');
+bham79 =imread('27bham (79).bmp');
+bham80 =imread('27bham (80).bmp');
+bham81 =imread('27bham (81).bmp');
+bham82 =imread('27bham (82).bmp');
+bham83 =imread('27bham (83).bmp');
+bham84 =imread('27bham (84).bmp');
+bham85 =imread('27bham (85).bmp');
+bham86 =imread('27bham (86).bmp');
+bham87 =imread('27bham (87).bmp');
+bham88 =imread('27bham (88).bmp');
+bham89 =imread('27bham (89).bmp');
+bham90 =imread('27bham (90).bmp');
+bham91 =imread('27bham (91).bmp');
+bham92 =imread('27bham (92).bmp');
+bham93 =imread('27bham (93).bmp');
+bham94 =imread('27bham (94).bmp');
+bham95 =imread('27bham (95).bmp');
+bham96 =imread('27bham (96).bmp');
+bham97 =imread('27bham (97).bmp');
+bham98 =imread('27bham (98).bmp');
+bham99 =imread('27bham (99).bmp');
+bham100 =imread('27bham (100).bmp');
+ 
+ 
+ 
+bhamL1=double(array2vector(rw,cl,bham1));
+bhamL2=double(array2vector(rw,cl,bham2));
+bhamL3=double(array2vector(rw,cl,bham3));
+bhamL4=double(array2vector(rw,cl,bham4));
+bhamL5=double(array2vector(rw,cl,bham5));
+bhamL6=double(array2vector(rw,cl,bham6));
+bhamL7=double(array2vector(rw,cl,bham7));
+bhamL8=double(array2vector(rw,cl,bham8));
+bhamL9=double(array2vector(rw,cl,bham9));
+bhamL10=double(array2vector(rw,cl,bham10));
+bhamL11=double(array2vector(rw,cl,bham11));
+bhamL12=double(array2vector(rw,cl,bham12));
+bhamL13=double(array2vector(rw,cl,bham13));
+bhamL14=double(array2vector(rw,cl,bham14));
+bhamL15=double(array2vector(rw,cl,bham15));
+bhamL16=double(array2vector(rw,cl,bham16));
+bhamL17=double(array2vector(rw,cl,bham17));
+bhamL18=double(array2vector(rw,cl,bham18));
+bhamL19=double(array2vector(rw,cl,bham19));
+bhamL20=double(array2vector(rw,cl,bham20));
+bhamL21=double(array2vector(rw,cl,bham21));
+bhamL22=double(array2vector(rw,cl,bham22));
+bhamL23=double(array2vector(rw,cl,bham23));
+bhamL24=double(array2vector(rw,cl,bham24));
+bhamL25=double(array2vector(rw,cl,bham25));
+bhamL26=double(array2vector(rw,cl,bham26));
+bhamL27=double(array2vector(rw,cl,bham27));
+bhamL28=double(array2vector(rw,cl,bham28));
+bhamL29=double(array2vector(rw,cl,bham29));
+bhamL30=double(array2vector(rw,cl,bham30));
+bhamL31=double(array2vector(rw,cl,bham31));
+bhamL32=double(array2vector(rw,cl,bham32));
+bhamL33=double(array2vector(rw,cl,bham33));
+bhamL34=double(array2vector(rw,cl,bham34));
+bhamL35=double(array2vector(rw,cl,bham35));
+bhamL36=double(array2vector(rw,cl,bham36));
+bhamL37=double(array2vector(rw,cl,bham37));
+bhamL38=double(array2vector(rw,cl,bham38));
+bhamL39=double(array2vector(rw,cl,bham39));
+bhamL40=double(array2vector(rw,cl,bham40));
+bhamL41=double(array2vector(rw,cl,bham41));
+bhamL42=double(array2vector(rw,cl,bham42));
+bhamL43=double(array2vector(rw,cl,bham43));
+bhamL44=double(array2vector(rw,cl,bham44));
+bhamL45=double(array2vector(rw,cl,bham45));
+bhamL46=double(array2vector(rw,cl,bham46));
+bhamL47=double(array2vector(rw,cl,bham47));
+bhamL48=double(array2vector(rw,cl,bham48));
+bhamL49=double(array2vector(rw,cl,bham49));
+bhamL50=double(array2vector(rw,cl,bham50));
+bhamL51=double(array2vector(rw,cl,bham51));
+bhamL52=double(array2vector(rw,cl,bham52));
+bhamL53=double(array2vector(rw,cl,bham53));
+bhamL54=double(array2vector(rw,cl,bham54));
+bhamL55=double(array2vector(rw,cl,bham55));
+bhamL56=double(array2vector(rw,cl,bham56));
+bhamL57=double(array2vector(rw,cl,bham57));
+bhamL58=double(array2vector(rw,cl,bham58));
+bhamL59=double(array2vector(rw,cl,bham59));
+bhamL60=double(array2vector(rw,cl,bham60));
+bhamL61=double(array2vector(rw,cl,bham61));
+bhamL62=double(array2vector(rw,cl,bham62));
+bhamL63=double(array2vector(rw,cl,bham63));
+bhamL64=double(array2vector(rw,cl,bham64));
+bhamL65=double(array2vector(rw,cl,bham65));
+bhamL66=double(array2vector(rw,cl,bham66));
+bhamL67=double(array2vector(rw,cl,bham67));
+bhamL68=double(array2vector(rw,cl,bham68));
+bhamL69=double(array2vector(rw,cl,bham69));
+bhamL70=double(array2vector(rw,cl,bham70));
+bhamL71=double(array2vector(rw,cl,bham71));
+bhamL72=double(array2vector(rw,cl,bham72));
+bhamL73=double(array2vector(rw,cl,bham73));
+bhamL74=double(array2vector(rw,cl,bham74));
+bhamL75=double(array2vector(rw,cl,bham75));
+bhamL76=double(array2vector(rw,cl,bham76));
+bhamL77=double(array2vector(rw,cl,bham77));
+bhamL78=double(array2vector(rw,cl,bham78));
+bhamL79=double(array2vector(rw,cl,bham79));
+bhamL80=double(array2vector(rw,cl,bham80));
+bhamL81=double(array2vector(rw,cl,bham81));
+bhamL82=double(array2vector(rw,cl,bham82));
+bhamL83=double(array2vector(rw,cl,bham83));
+bhamL84=double(array2vector(rw,cl,bham84));
+bhamL85=double(array2vector(rw,cl,bham85));
+bhamL86=double(array2vector(rw,cl,bham86));
+bhamL87=double(array2vector(rw,cl,bham87));
+bhamL88=double(array2vector(rw,cl,bham88));
+bhamL89=double(array2vector(rw,cl,bham89));
+bhamL90=double(array2vector(rw,cl,bham90));
+bhamL91=double(array2vector(rw,cl,bham91));
+bhamL92=double(array2vector(rw,cl,bham92));
+bhamL93=double(array2vector(rw,cl,bham93));
+bhamL94=double(array2vector(rw,cl,bham94));
+bhamL95=double(array2vector(rw,cl,bham95));
+bhamL96=double(array2vector(rw,cl,bham96));
+bhamL97=double(array2vector(rw,cl,bham97));
+bhamL98=double(array2vector(rw,cl,bham98));
+bhamL99=double(array2vector(rw,cl,bham99));
+bhamL100=double(array2vector(rw,cl,bham100));
+ 
+ 
+bham=  [bhamL1,bhamL2,bhamL3,bhamL4,bhamL5,bhamL6,bhamL7,bhamL8,bhamL9,bhamL10,...
+      bhamL11,bhamL12,bhamL13,bhamL14,bhamL15,bhamL16,bhamL17,bhamL18,bhamL19,bhamL20,...
+      bhamL21,bhamL22,bhamL23,bhamL24,bhamL25,bhamL26,bhamL27,bhamL28,bhamL29,bhamL30,...
+      bhamL31,bhamL32,bhamL33,bhamL34,bhamL35,bhamL36,bhamL37,bhamL38,bhamL39,bhamL40,...
+      bhamL41,bhamL42,bhamL43,bhamL44,bhamL45,bhamL46,bhamL47,bhamL48,bhamL49,bhamL50,...
+      bhamL51,bhamL52,bhamL53,bhamL54,bhamL55,bhamL56,bhamL57,bhamL58,bhamL59,bhamL60,...
+      bhamL61,bhamL62,bhamL63,bhamL64,bhamL65,bhamL66,bhamL67,bhamL68,bhamL69,bhamL70,...
+      bhamL71,bhamL72,bhamL73,bhamL74,bhamL75,bhamL76,bhamL77,bhamL78,bhamL79,bhamL80,...
+      bhamL81,bhamL82,bhamL83,bhamL84,bhamL85,bhamL86,bhamL87,bhamL88,bhamL89,bhamL90,...
+      bhamL91,bhamL92,bhamL93,bhamL94,bhamL95,bhamL96,bhamL97,bhamL98,bhamL99,bhamL100];
+  
+ 
+
+
